@@ -1,0 +1,55 @@
+{doctype}
+<html{lang_attribute}{xmlns}>
+
+<head>
+<meta charset="{charset}"{xhtml}>
+<title>{page_title_and_site_name}</title>
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"{xhtml}>
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="{layout_url}/images/favicon.ico"{xhtml}>
+
+<!-- <meta http-equiv="Pragma" content="no-cache"{xhtml}> -->
+<link rel="start contents" href="{site_url}"{xhtml}>
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet"{xhtml}>
+{feed_url}
+{rel_links}
+{plg_headercode}
+
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="{layout_url}/css_{direction}/ie8.css"{xhtml}><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="{layout_url}/javascript/respond.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body dir="{direction}" class="{layout_columns}" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+{# start {templatelocation} #}
+
+  <!-- #container { -->
+  <div id="container">
+    <p class="skip"><a href="#centerblocks">本文へ</a></p>
+    <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+          <h1 class="site_name" itemprop="name"><a href="{site_url}" title="{site_name}" itemprop="url">{site_name}</a></h1>
+          <p class="site_slogan">{site_slogan}</p>
+          <p class="s_nav_btn"><a href="#navigation" title="ナビゲーションメニュー" aria-label="ナビゲーションメニュー">&equiv;</a></p>
+    </header>
+
+    <nav id="navigation" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+      <h2>グローバルナビゲーション</h2>
+      <ul>
+        {menu_elements}
+      </ul>
+    </nav>
+
+    <hr class="separator"{xhtml}>
+
+    <!-- #wrapper { -->
+    <div id="wrapper">
+
+      <!-- Center Block Container -->
+      <div id="centerblocks">
+      <main role="main" itemscope="itemscope" itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+          <p class="welcome_msg">{welcome_msg}&nbsp;{datetime}</p>
+          {breadcrumb_trail}

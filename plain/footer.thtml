@@ -1,0 +1,40 @@
+        </main>
+      </div>
+
+      {left_blocks}
+
+      {right_blocks}
+
+    </div>
+    <!-- } #wrapper -->
+
+    <hr class="separator"{xhtml}>
+
+    <footer id="footer" role="contentinfo" class="clearfix" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+    <p class="back"><a href="#header"><img src="{layout_url}/images/custom/icon-pagetop.png" alt="ページの先頭へ"></a></p>
+    <ul>
+      <li class="copyright_notice" itemprop="copyrightHolder" itemscope="itemscope" itemtype="http://schema.org/Organization"><small itemprop="name">{copyright_msg}</small></li>
+      <li id="powered_by">{powered_by}&nbsp;<a href="https://www.geeklog.net/">Geeklog</a></li>
+    </ul>
+    </footer>
+
+  </div>
+  <!-- } #container -->
+
+  {plg_footercode}
+
+<script src="{layout_url}/javascript/hamburger-nav.js"></script>
+
+  <!-- Depending on the situation, HTML body element's class attribute to specify a value by JavaScript
+       The argument from the left, the right block container, the middle block left the right block id attribute value -->
+  <script type="text/javascript">
+  <!--
+    FixHTML('leftblocks', 'centerblocks', 'rightblocks');
+  -->
+  </script>
+{googleanalytics}
+{# end {templatelocation} #}
+
+</body>
+
+</html>

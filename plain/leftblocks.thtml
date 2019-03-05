@@ -1,0 +1,27 @@
+
+    <hr class="separator"{xhtml}>
+<p class="skip"><a href="#rightblocks">サブメニュー1をスキップしてサブメニュー2へ</a></p>   
+    <div id="leftblocks" role="complementary">
+      <section class="block-left" role="search" id="block-left-search">
+        <h2 class="block-title">{button_search}</h2>
+        <div class="block-left-content">
+          <form action="{site_url}/search.php" method="get" class="searchform basic">
+            <fieldset>
+              <legend class="gl-screen-reader-only">{button_search}</legend>
+              <ul>
+                <li><input type="text" size="16" maxlength="255" name="query" title="サイト内検索" placeholder="{button_search}"{xhtml}></li>
+                <li>
+                  <input type="hidden" value="all" name="type">
+                  <input type="hidden" value="all" name="keyType">
+                  <input type="hidden" value="search" name="mode">
+                  <input type="submit" value="{button_search}" class="submit">
+                </li>
+                <li><a href="{site_url}/search.php">{button_advsearch}</a></li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      {geeklog_blocks}
+    </div>
