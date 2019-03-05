@@ -27,7 +27,7 @@ RADME（解説ファイル[このファイルです。]）
 
 * PC2カラム、タブレットスマホ１カラムレイアウトのテーマです。
 
-* 横幅1024以下の環境では、WAI-ARIAを使用したドロワーメニュー(Progressive Hamburger by @heydonworks http://www.heydonworks.com/)を使用させていただいていいます。(よりアクセシブルになるよう少し改良しています)
+* 横幅1024以下の環境では、WAI-ARIAを使用したドロワーメニュー(Progressive Hamburger by @heydonworks http://www.heydonworks.com/ )を使用させていただいていいます。(よりアクセシブルになるよう少し改良しています)
 
 * ドロワーメニューを開いた時は、「×」ボタン又はメニューを選択するまではフォーカスはグローバルナビゲーション内のみの移動になります。
 
